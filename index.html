@@ -12,16 +12,30 @@
 <body>
     <!-- Header -->
     <header>
-        <form>
-            <input id="nomeCognome" type="text" placeholder="qui">
-            <input id="chilometri" type="text" placeholder="qui">
-          </form> 
-          <select id="fasciaEta">
-            <option value="minorenne">Minorenne</option>
-            <option value="maggiorenne">Maggiorenne</option>
-            <option value="over65">Over 65</option>
-        </select>
-        <button class="button" type="button">Genera</button> 
+            <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+            <div class="container">
+                <div class="calcolo">
+                    <form class="box" action="">
+                        <label for="nomeCognome">Nome Cognome</label>
+                        <input id="nomeCognome" name="nomeCognome" type="text" placeholder="Inserisci">
+                    </form>
+                    <form class="box" action="">
+                        <label for="chilometri">Km da percorrere</label>
+                        <input id="chilometri" name="chilometri" type="text" placeholder="Inserisci">
+                    </form>
+                    <form class="box" action="">
+                        <label for="fasciaEta">Fascia d'età</label> 
+                        <select id="fasciaEta" name="fasciaEta">
+                    </form>
+                        <option id="minorenne" value="minorenne">Minorenne</option>
+                        <option id="maggiorenne" value="maggiorenne">Maggiorenne</option>
+                        <option id="over65" value="over65">Over 65</option>
+                    </select>
+                </div>
+                <div>
+                    <button class="button" type="button">Genera</button> 
+                </div>
+            </div>
 
     </header>
     <!--/ Header -->

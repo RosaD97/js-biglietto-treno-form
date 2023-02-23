@@ -12,21 +12,41 @@ body{
 /* Common */
 h2{
     color: #fff;
-    padding: 15px 0;
+    padding: 10px 0;
 }
-/* Inizio Header */
-header{
-    text-align: center;
+
+.weight700{
+    font-weight: 700;
 }
-.container{
+
+.stilebtn{
+    background-color: lightgrey;
+    color: #b91547;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 5px 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container, .containerBiglietto{
     width: 835px;
     background-color: #fff;
     height: 191px;
     margin: 0 auto;
-    padding: 10px 70px;
+    padding: 10px 30px;
+
+}
+
+/* Inizio Header */
+header, main{
+    text-align: center;
+}
+.container{
+    border-radius: 10px;
 }
 .calcolo{
-    text-align: center;
     display: flex;
     justify-content: center;
     gap: 65px;
@@ -36,9 +56,16 @@ header{
     display: flex;
     flex-direction: column;
     color: #b91547;
+    font-weight: 600;
 }
 label{
     padding-bottom: 15px;
+}
+.miniBox{
+    border: 1px solid #b91547;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 5px;
 }
 
 /* Fine Header */
@@ -46,4 +73,42 @@ label{
 
 
 /* Inizio Main */
+.display{
+    display: none;
+}
+
+main{
+    margin-top: 10px;
+}
+
+.text{
+    font-size: 20px;
+    text-align: start;
+    display: block;
+}
+
+.boxinfo{
+    display: flex;
+    justify-content: space-around;
+    width: 568px;
+}
+
+.ticketbox{
+    display: flex;
+    height: 125px;
+    border: 1px solid gray;
+}
+.boxnome{
+    display: flex;
+    text-align: start;
+    padding: 20px 20px;
+    flex-direction: column;
+    background-color: grey;
+}
+.miniboxinfo{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    justify-content: space-between;
+}
 /* Fine Main */

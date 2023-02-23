@@ -9,7 +9,7 @@ STEP2
 Salvare le informazioni dello step1 in due variabili.
 
 STEP3
-Creare un bottone select per la scelta tra minorenne/over 65.
+Creare un bottone select per la scelta tra minorenne/maggiorenne/over 65.
 
 STEP4
 Salvare l'informazione dello step3 in una variabile.

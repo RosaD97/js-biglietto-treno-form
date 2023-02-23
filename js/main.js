@@ -28,8 +28,25 @@ if (fasciaEta == minorenne){
 
 // Evento click su bottone Genera
 button.addEventListener('click',
-    function(){
-        console.log(document.getElementById("nomeCognome").value);
-        console.log(prezzoBiglietto.toFixed(2));    
+    function(){ 
+        let mostra = document.querySelector(".display");
+        mostra.classList.toggle("display");
+                // Dati Nome e Cognome stampati in ticket
+                const utente = nomeCognome.value;
+                document.querySelector(".nomeCognome").innerHTML = utente;
+                // Prezzo biglietto stampato in ticket
+                const prezzoFinale = (prezzoBiglietto) + `€`; 
+                document.querySelector(".prezzo").innerHTML = prezzoFinale;
     }
 )
+
+
+const reset = document.querySelector(".reset");
+
+button.addEventListener('click',
+    function clearResult(form){
+        document.getElementById("nomeCognome").value;
+    }
+)
+
+

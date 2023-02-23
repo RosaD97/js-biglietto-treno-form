@@ -6,7 +6,7 @@ const nomeCognome = document.getElementById("nomeCognome");
 const chilometri = document.getElementById("chilometri");
 const fasciaEta = document.getElementById("fasciaEta");
 
-// Variabili TIcket
+// Variabili Ticket
 const textName = document.getElementById('textnomeCognome');
 const textOffer = document.getElementById('ticket');
 const carrozza = document.getElementById('carrozza');
@@ -16,9 +16,9 @@ const textPrezzo = document.getElementById('prezzo');
 
 // Button
 const button = document.querySelector(".button");
-const reset = document.getElementById('reset');
+const resetButton = document.getElementById('reset');
 
-const display = document.querySelector(".display");
+const display = document.querySelector(".displayNone");
 
 
 // Evento click su bottone Genera
@@ -43,27 +43,22 @@ button.addEventListener('click',
             }
 
         prezzoBiglietto = prezzoBiglietto.toFixed(2);
-        console.log(prezzoBiglietto);
+
 
         textName.innerHTML = inputNameValue;
         textOffer.innerHTML = message;
-        carrozza.innerHTML = nomeCognome;
-        textCp.innerHTML = nomeCognome;
+        carrozza.innerHTML = Math.floor(Math.random() * 10) + 1;
+        textCp.innerHTML = Math.floor(Math.random() * 10000);
         textPrezzo.innerHTML =  `${prezzoBiglietto} $ `;
 
         // Mostra biglietto
         display.classList.add("displayshow");
-
-        
-
 
         }
 );
 
 reset.addEventListener('click', 
 function(){
-    display.classList.remove("display");
+    display.classList.remove("displayshow");
     textName.value = '';
-
-
 })

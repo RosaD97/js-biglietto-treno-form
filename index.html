@@ -15,13 +15,16 @@
             <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
             <div class="container">
                 <div class="calcolo">
-                    <form class="box" action="">
+                    <form class="box">
+                        <div class="flex">
                         <label for="nomeCognome">Nome Cognome</label>
-                        <input class="miniBox" id="nomeCognome" name="nomeCognome" type="text" placeholder="Inserisci">
-
+                        <input class="miniBox" id="nomeCognome" type="text" placeholder="Inserisci">
+                        </div>
+                        <div class="flex">
                         <label for="chilometri">Km da percorrere</label>
-                        <input class="miniBox" id="chilometri" name="chilometri" type="number" placeholder="Inserisci">
-
+                        <input class="miniBox" id="chilometri" type="number" placeholder="Inserisci" >
+                        </div>
+                        <div class="flex">
                         <label for="fasciaEta">Fascia d'età</label> 
                         <select class="miniBox" id="fasciaEta" name="fasciaEta">
                     
@@ -29,6 +32,7 @@
                         <option id="maggiorenne" value="maggiorenne">Maggiorenne</option>
                         <option id="over65" value="over65">Over 65</option>
                         </select>
+                        </div>
                 </div>
                 <div>
                     <button class="button stilebtn" type="button">Genera</button> 
@@ -41,29 +45,29 @@
 
 
     <!-- Main -->
-    <main class="display">
+    <main class="displayNone">
         <h2>IL TUO BIGLIETTO</h2>
         <div class="containerBiglietto">
             <span class="weight700 text">DETTAGIO PASSEGGERI</span>
-            <div class="ticketbox">
-                <div class="boxnome weight700"> 
+            <div class="ticketbox displayFlex">
+                <div class="boxnome weight700 displayFlex"> 
                     <span>NOME PASSEGGERO</span>
                     <span id="textnomeCognome">nomeCognome</span>
                 </div>
-                <div class="boxinfo">
+                <div class="boxinfo displayFlex">
                     <div class="miniboxinfo">
                         <span class="weight700">Offerta</span>
                         <span id="ticket">Biglietto Standard</span>
                     </div>
-                    <div class="miniboxinfo">
+                    <div class="miniboxinfo displayFlex">
                         <span class="weight700">Carrozza</span>
-                        <span id="carrozza"></span>
+                        <span id="carrozza">4</span>
                     </div>
-                    <div class="miniboxinfo">
+                    <div class="miniboxinfo displayFlex">
                         <span class="weight700">Codice CP</span>
-                        <span id="text-cp"></span>
+                        <span id="text-cp">5567</span>
                     </div>
-                    <div class="miniboxinfo">
+                    <div class="miniboxinfo displayFlex">
                         <span class="weight700">Costo biglietto</span>
                         <span id="prezzo"></span>
                     </div>

@@ -5,14 +5,15 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #b91547;
+    margin-top: 4.375rem;
+    background: #3f1d2d;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
 /* Common */
 h2{
     color: #fff;
-    padding: 10px 0;
+    padding: 1.875rem 0;
 }
 
 .weight700{
@@ -20,9 +21,9 @@ h2{
 }
 
 .stilebtn{
-    background-color: lightgrey;
-    color: #b91547;
-    border: 1px solid grey;
+    background-color: #811336;
+    color: #fff;
+    border: 1px solid #3f1d2d;
     border-radius: 5px;
     font-size: 18px;
     font-weight: 700;
@@ -36,7 +37,14 @@ h2{
     height: 191px;
     margin: 0 auto;
     padding: 10px 30px;
-
+    box-shadow: 0px 10px 13px -5px #ee4540;
+}
+.displayFlex{
+    display: flex;
+}
+.flex-d{
+    display: flex;
+    flex-direction: column;
 }
 
 /* Inizio Header */
@@ -45,6 +53,7 @@ header, main{
 }
 .container{
     border-radius: 10px;
+    margin-bottom: 30px;
 }
 .calcolo{
     display: flex;
@@ -53,17 +62,21 @@ header, main{
     padding: 15px 0;
 }
 .box{
-    color: #b91547;
+    color: #3f1d2d;
     font-weight: 600;
+    display: flex;
+    gap: 70px;
+    padding-bottom: 20px;
 }
 label{
     padding-bottom: 15px;
 }
 .miniBox{
-    border: 1px solid #b91547;
+    border: 1px solid #3f1d2d;
     text-align: center;
     padding: 5px 0;
     border-radius: 5px;
+    margin-top: 10px;
 }
 
 /* Fine Header */
@@ -71,40 +84,35 @@ label{
 
 
 /* Inizio Main */
-.display{
+.displayNone{
     display: none;
 }
-.displayshow{
+.displayshow, .text{
     display: block;
 }
-
 main{
     margin-top: 10px;
 }
-
 .text{
     font-size: 20px;
     text-align: start;
-    display: block;
 }
 
 .boxinfo{
-    display: flex;
     justify-content: space-around;
     width: 568px;
 }
 
 .ticketbox{
-    display: flex;
     height: 125px;
-    border: 1px solid gray;
+    border: 1px solid #510a32;
 }
 .boxnome{
-    display: flex;
     text-align: start;
     padding: 20px 20px;
     flex-direction: column;
-    background-color: grey;
+    background-color: #510a32;
+    color: #fff;
 }
 .miniboxinfo{
     display: flex;
@@ -113,3 +121,33 @@ main{
     justify-content: space-between;
 }
 /* Fine Main */
+
+/* Hover */
+.stilebtn:hover{
+    color: #ee4540;
+    box-shadow: 0px 0px 17px 6px  #ee4540;
+    cursor: pointer;
+    background-image: linear-gradient(90deg, #510a32 0%, #811336 49%, #811336 80%, #510a32 100%);
+     animation: slidebg 5s linear infinite;
+}
+.miniBox:focus{
+    box-shadow: 0px 0px 17px 1px  #ee4540;
+    outline: none;
+}
+
+/* Animazione copiata e incollata da internet Palese */
+@keyframes slidebg {
+    to {
+      background-position:20vw;
+    }
+  }
+  
+  .follow{
+    margin-top: 40px;
+  }
+  
+  .follow a{
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+  }

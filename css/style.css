@@ -53,8 +53,6 @@ header, main{
     padding: 15px 0;
 }
 .box{
-    display: flex;
-    flex-direction: column;
     color: #b91547;
     font-weight: 600;
 }
@@ -75,6 +73,9 @@ label{
 /* Inizio Main */
 .display{
     display: none;
+}
+.displayshow{
+    display: block;
 }
 
 main{
